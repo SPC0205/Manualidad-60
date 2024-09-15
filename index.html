@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>NATALIA</strong>
+                        <p>
+                        Natalia , eres una persona unica y especial para mi , te doy las gracias por acompañarme este año y hacerlo el mejor año posible , me diverti mucho saliendo a pasear contigo y a través de esta carta me gustaria mostrarte todo el cariño y aprecio que te tengo , eres muy especial y siempre estaras en un lugar muy unico en mi corazon de donde nadie podra sacarte jamas
+                        Me gustaria saber el porque ahora de la nada cambiaste y estas diferente y no me hablas , el hecho de mantener la racha me mantiene pensando que no estas del todo enojada pero creo que algo hice y eso te enojo y quiero resolver esto y que vuelva todo a estar como antes porque eres una persona a la que jamas podria reemplazar y no quiero buscar a otra persona a la cual considerar especial , encontrar alguien como tu es imposible , me gustaria resolver todo esto porfa , gracias por tomarte el tiempo de leer
+
+                      <strong> Sebastian </strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
